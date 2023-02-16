@@ -38,5 +38,3 @@ jobs:
         dockerhub-token: ${{ secrets.DOCKER_TOKEN }}
         version: 1.0
 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
