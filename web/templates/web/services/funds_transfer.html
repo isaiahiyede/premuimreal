@@ -1,0 +1,88 @@
+{% extends "web/layout.html" %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Funds Transfer
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/premiumreal.jpg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Funds Transfer
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Funds Transfer</h1>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            Welcome to Premiumreal Technologies Cross Border Zero-Fee Money Transfer Service!
+          </p>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            Are you tired of high fees and long wait times when sending money internationally? At Premiumreal, we offer a fast, convenient, and cost-effective solution for sending money across borders.
+          </p>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            Our zero-fee money transfer service allows you to send money to loved ones, pay bills, or make business payments without having to worry about steep fees or hidden charges. We offer competitive exchange rates and our transfers are typically completed within 24 hours, so you can get your money where it needs to go quickly and easily.          </p>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            In addition to our zero-fee service, we also offer a range of other convenient features, including the ability to send money online, through our mobile app, or in person at one of our many locations. We also have a dedicated customer service team available to answer any questions or concerns you may have.
+          </p>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            So why pay more to send money internationally? Choose Premiumreal for a hassle-free and cost-effective way to send money across borders. Sign up today and start enjoying the benefits of our zero-fee money transfer service.
+          </p>
+
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

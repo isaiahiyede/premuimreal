@@ -1,0 +1,93 @@
+{% extends "web/layout.html" %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Study Abroad
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/study.jpg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+             Study Abroad
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Study Abroad</h1>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            Welcome to Premium Real Consulting Travel and Study Abroad Services!
+          </p>
+
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+              Are you looking to embark on the adventure of a lifetime? At Premium Real Consulting Travel and Study Abroad Services, we specialize in helping individuals, families, students and young professionals experience the world through study abroad and international travel programs.
+          </p>
+
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+              Our team of experienced advisors will work with you to find the perfect program that meets your academic and personal goals. Whether you are looking to study abroad for a semester, participate in a language immersion program, or simply take a gap year to travel and explore new cultures, we have a wide range of options to choose from.          
+            </p>
+
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+              In addition to finding the right program for you, we can also assist with the logistics of your trip, including obtaining visas, arranging flights and accommodations, and providing ongoing support throughout your journey.          </p>
+
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+              So why wait? Take the first step towards your dream adventure and contact us today to learn more about our travel and study abroad services. We can't wait to help you create lasting memories and make the most of your time abroad.
+          </p>
+
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

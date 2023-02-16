@@ -1,0 +1,192 @@
+{% extends "web/layout.html" %} {% load static %}
+<div></div>
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Educational Services
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/capacity.png);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Educational Services
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Educational Services</h1>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Welcome to Premium Real Consulting in Conjunction with Premium Real Business School 
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            We are a leading consulting firm that specializes in providing high-quality business education and training for  individuals and organizations. Our team of experienced professionals is dedicated to helping you succeed in today's competitive world.<br><br>
+            We offer a wide range of educational services, including:<br>
+
+            • Business school courses and programs
+            • Corporate training and development
+            • Executive coaching and leadership development
+            • Consulting services for businesses and organizations
+            • Business Analysis etc.<br><br>
+
+            Our business school courses and programs are designed to provide you with the knowledge, skills, and insights you need to excel in your career. Our experienced instructors are experts in their fields and are committed to helping you reach your full potential.<br><br>
+
+            In addition to our business school courses and programs, we also offer a range of corporate training and development services. Whether you're looking to upskill your current team or build new capabilities for your organization, we have the resources and expertise to help you succeed.
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container my-2 my-md-4 my-lg-5">
+  <h2 class="h1 text-center pt-1 pt-xl-3 mb-lg-4">Courses</h2>
+  <div
+    class="swiper mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+    data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 8,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 1
+            },
+            "800": {
+              "slidesPerView": 2
+            },
+            "1200": {
+              "slidesPerView": 3
+            }
+          }
+        }'
+  >
+    <div
+      class="swiper-wrapper"
+      id="swiper-wrapper-d06446b91a9f4bbe"
+      aria-live="polite"
+    >
+      <!-- Item -->
+      
+      <div
+        class="swiper-slide h-auto py-3 swiper-slide-active"
+        role="group"
+        aria-label="1 / 3"
+        style="width: 322px; margin-right: 8px">
+        
+        <div class="card h-100 card-body card-hover mx-2 text-center">
+          <span class="fa-solid fa-cubes fa-3x"></span>
+          <a href="{% url 'web.services.business' %}">
+          <h3 class="h5 pt-3 pb-1 mb-2">
+            Business Analysis
+          </h3>
+          </a>
+          <p class="mb-0">
+            Well-versed in the languages of data, we will make sure your systems
+            are singing from the same hymn sheet. We align data collection
+            methods across databases & APIs to bring your systems together.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Item -->
+      <div
+        class="swiper-slide h-auto py-3"
+        role="group"
+        aria-label="2 / 3"
+        style="width: 322px; margin-right: 8px">
+        <div class="card h-100 card-body card-hover mx-2 text-center">
+          <span class="fa-solid fa-flask-vial fa-3x"></span>
+          <h3 class="h5 pt-3 pb-1 mb-2">
+            SQL For Data Analysis
+          </h3>
+          <p class="mb-0">
+            Your data exists to serve your business. Learn how to use SQL to analyse this data
+          </p>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div
+        class="swiper-slide h-auto py-3"
+        role="group"
+        aria-label="3 / 3"
+        style="width: 322px; margin-right: 8px">
+        <div class="card h-100 card-body card-hover mx-2 text-center">
+          <span class="fa-solid fa-circle-nodes fa-3x"></span>
+          <h3 class="h5 pt-3 pb-1 mb-2">Scrum Master For Project Management</h3>
+          <p class="mb-0">
+            We engineer future-proof systems that can scale to your business’
+            growth. We can migrate legacy data warehouses into state-of-the-art
+            data lakes with serverless pipeless for real-time data analysis.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination (bullets) -->
+    <div
+      class="swiper-pagination position-relative d-xl-none pt-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+    >
+      <span
+        class="swiper-pagination-bullet swiper-pagination-bullet-active"
+        tabindex="0"
+        role="button"
+        aria-label="Go to slide 1"
+        aria-current="true"
+      ></span>
+    </div>
+    <span
+      class="swiper-notification"
+      aria-live="assertive"
+      aria-atomic="true"
+    ></span>
+    <span
+      class="swiper-notification"
+      aria-live="assertive"
+      aria-atomic="true"
+    ></span>
+  </div>
+</section>
+
+{% endblock %}

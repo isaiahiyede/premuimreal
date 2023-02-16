@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PREMIUM REAL CONSULTING</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PREMIUM REAL CONSULTING" />
+    <meta
+      name="keywords"
+      content="Study, Study abroad, study in canada, canada, transfer, transfer money, transfer funds, transfer africa,
+      send money, send money from canada, send money abroad, consulting, trainings, finanacing, nano loans, loans"
+    />
+    <meta name="author" content="PREMIUM REAL CONSULTING" />
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="{% static 'web/img/logo-5.jpg' %}" />
+    <meta name="msapplication-TileColor" content="#080032" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Vendor Styles -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="{% static 'web/vendor/boxicons/css/boxicons.min.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/all.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="{% static 'web/css/swiper-bundle.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="{% static 'web/vendor/lightgallery/css/lightgallery-bundle.min.css' %}"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Theme Styles + Bootstrap -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="{% static 'web/css/theme.min.css' %}"
+    />
+
+    <!-- Page loading styles -->
+    <style>
+      @font-face {
+        font-family: Avenir;
+        src: url("{% static 'web/fonts/AvenirLTStd-Book.otf' %}")
+          format("opentype");
+      }
+      body,
+      html {
+        font-family: "Avenir", "Noto Sans", sans-serif;
+      }
+      #hero {
+        background-image: url("{% static 'web/img/hero.jpg' %}");
+        object-fit: cover;
+        object-position: 50% 50%;
+        max-width: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 402px;
+        height: 680.8px;
+        overflow: hidden;
+        pointer-events: none;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        will-change: transform, opacity;
+        margin-top: 81.6px;
+        transform: translate3d(0px, -171.3px, 0px);
+      }
+
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+
+      #footer-cta {
+        background: url("{% static 'web/img/landing/digital-agency/contact-bg.png' %}");
+      }
+
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: 0.6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255, 255, 255, 0.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      #hero-bg {
+        background: url("{% static 'web/img/landing/digital-agency/hero-bg.svg' %}");
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem("mode"),
+        root = document.getElementsByTagName("html")[0];
+      if (mode !== null && mode === "dark") {
+        root.classList.add("dark-mode");
+      } else {
+        root.classList.remove("dark-mode");
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+      {% include 'web/partials/header.html' %}
+      <div></div>
+      {% block 'content' %} {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'web/partials/footer.html' %}
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="{% static 'web/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'web/js/smooth-scroll.polyfills.min.js' %}"></script>
+    <script src="{% static 'web/js/jarallax.min.js' %}"></script>
+    <script src="{% static 'web/js/lottie-player.js' %}"></script>
+    <script src="{% static 'web/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'web/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'web/js/shuffle.min.js' %}"></script>
+
+    <!-- Main Theme Script -->
+    <script src="{% static 'web/js/theme.min.js' %}"></script>
+  </body>
+</html>

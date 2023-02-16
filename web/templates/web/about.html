@@ -1,0 +1,165 @@
+{% extends 'web/layout.html' %} {% load static %}
+<div></div>
+{% block 'content' %}
+<section class="position-relative pt-5">
+  <!-- Background -->
+  <div
+    class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0"
+    style="background-image: url(assets/img/about/hero-bg.svg)"
+  >
+    <div class="d-lg-none" style="height: 960px"></div>
+    <div class="d-none d-lg-block" style="height: 768px"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="container position-relative zindex-5 pt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Breadcrumb -->
+        <nav
+          class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+
+        <!-- Text -->
+        <h1 class="pb-2 pb-md-3">PREMIUM REAL CONSULTING</h1>
+        <p
+          class="pb-4 h5 fw-light mb-1 mb-md-2 mb-lg-3"
+          style="max-width: 526px; text-align: justify"
+        >
+          With the business world full of great ideas and few investors we will guide you in developing, 
+          evaluating and presenting your ideas. We pride ourselves with consultants that have a vast 
+          range of experience designing business plans that are on the right course for success.
+        </p>
+          <p
+          class="pb-4 h5 fw-light mb-1 mb-md-2 mb-lg-3"
+          style="max-width: 526px; text-align: justify"
+        >
+        Premium real consulting is a management professional
+        training & coaching firm with a strong focus on financial technology.
+        We also provide coaching, mentoring and training services in business analysis.
+        We also carry out study and travel abroad services.
+        
+        </p>
+
+      </div>
+
+      <!-- Images -->
+      <div class="col-lg-6 mt-xl-3 pt-5 pt-lg-4">
+        <!-- <div class="row row-cols-2 gx-3 gx-lg-4">
+          <div class="col pt-lg-5 mt-lg-1">
+            <img
+              src="{% static 'web/img/cdal.png' %}"
+              class="d-block rounded-3 mb-3 mb-lg-4"
+              alt="Image"
+            />
+            <img
+              src="{% static 'web/img/cdal2.png' %}"
+              class="d-block rounded-3"
+              alt="Image"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="{% static 'web/img/cdal.png' %}"
+              class="d-block rounded-3 mb-3 mb-lg-4"
+              alt="Image"
+            />
+            <img
+              src="{% static 'web/img/cdal2.png' %}"
+              class="d-block rounded-3"
+              alt="Image"
+            />
+          </div>
+        </div> -->
+        <img
+          src="{% static 'web/img/aboutPRC.jpeg' %}"
+          class="d-block rounded-3 mb-3 mb-lg-4"
+          alt="Image"
+          style="background-color: #f3f6ff"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+  <div
+    class="text-center pb-4 pb-md-0 mb-2 mb-md-5 mx-auto"
+    style="max-width: 530px"
+  >
+    <h2 class="h1">Our Purpose</h2>
+    <p class="mb-0">
+        To be the foremost consulting firm in Africa
+    </p>
+  </div>
+
+  <!-- Steps -->
+  <div
+    class="steps steps-sm steps-horizontal-md steps-center pb-5 mb-md-2 mb-lg-3"
+  >
+    <div class="step">
+      <div class="step-number">
+        <div class="step-number-inner">
+          <i class="fa-solid fa-lock-open"></i>
+        </div>
+      </div>
+      <div class="step-body">
+        <h3 class="h4 mb-3">Unlock</h3>
+        <p class="mb-0">
+         Unlock ideas that will make you competitive in the ever
+         changing business world
+        </p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">
+        <div class="step-number-inner">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+      </div>
+      <div class="step-body">
+        <h3 class="h4 mb-3">Value</h3>
+        <p class="mb-0">
+        Provide excellent services that will make you always 
+        be in business with us and your clients
+        </p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">
+        <div class="step-number-inner">
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+        </div>
+      </div>
+      <div class="step-body">
+        <h3 class="h4 mb-3">Data</h3>
+        <p class="mb-0">
+        Gain insights, see patterns from internal and external data sources to
+        help you make effective data driven decisions
+        </p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">
+        <div class="step-number-inner">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+      </div>
+      <div class="step-body">
+        <h3 class="h4 mb-3">Harness Potentials</h3>
+        <p class="mb-0">
+         Discover potentials within your business and connect with
+         other business seamlessly
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

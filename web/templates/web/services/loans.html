@@ -1,0 +1,81 @@
+{% extends "web/layout.html" %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Micro & Nano Loans
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/pcredit.png);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Micro & Nano Loans
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Micro & Nano Loans</h1>
+          <p
+            class="pb-2 mb-4 mb-xxl-5 text-justify"
+            style="text-align: justify">
+            Welcome to PCredit is a micro-lending platform that provides micro-loans for individuals and small business start-ups to meet their everyday financial needs. PCredit is powered by Premium Real Consulting LLC: 
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Are you an individual or an entrepreneur looking for financial support to handle personal needs or to grow your business? At PCredit, we understand the challenges that individuals and small business owners face, and we are dedicated to helping you succeed.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Our loan products are specifically designed for individuals and small businesses, and we offer flexible repayment terms and competitive interest rates to make it easier for you to get the funding you need. Whether you are looking to expand your operations, invest in new equipment, or simply need working capital to cover expenses, we can help.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Applying for a loan with PCredit, It is quick and easy. Simply fill out our online application and provide some basic information about yourself/business and financial history. Our team will review your application and get back to you with a decision within minutes.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Don't let a lack of funding hold you back from achieving your business goals. Click on the link below today to learn more about our loan products and how we can support your success. We look forward to helping you grow your business!
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,163 @@
+{% load static %}
+<header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+  <div class="container px-3">
+    <a href="/" class="navbar-brand pe-3">
+      <img src="{% static 'web/img/prc_logobk.png' %}" width="150" alt="PREMIUM REAL CONSULTING" />
+    </a>
+    <div id="navbarNav" class="offcanvas offcanvas-end">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Services</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="{% url 'web.services.study_abroad' %}"
+                  class="dropdown-item"
+                  >Study Abroad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{% url 'web.services.loans' %}"
+                  class="dropdown-item"
+                  >Micro and Nano Loans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{% url 'web.services.imp_exp' %}"
+                  class="dropdown-item"
+                  >Import and Export</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{% url 'web.services.education' %}"
+                  class="dropdown-item"
+                  >Educational Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{% url 'web.services.consulting' %}"
+                  class="dropdown-item"
+                  >Consulting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{% url 'web.services.funds_transfer' %}"
+                  class="dropdown-item"
+                  >Funds Transfer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Company</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/about" class="dropdown-item">About</a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-item">Careers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Courses</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="{% url 'web.services.business' %}" class="dropdown-item">Business Analysis</a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-item">SQL For Data Analysis</a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-item">Scrum Master</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="offcanvas-header border-top">
+        <a href="#!" class="btn btn-primary p-3 w-100 rounded-0">
+          &nbsp;Get Started
+        </a>
+      </div> -->
+    </div>
+    <!-- Theme Toggle -->
+    <div
+      class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4"
+      data-bs-toggle="mode"
+    >
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="theme-mode"
+        style="cursor: pointer"
+        title="Switch Theme"
+      />
+      <label
+        class="form-check-label d-none d-sm-block"
+        for="theme-mode"
+      ></label>
+      <label
+        class="form-check-label d-none d-sm-block"
+        for="theme-mode"
+      ></label>
+    </div>
+    <!-- End Theme Toggle -->
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <a
+      href="#!"
+      class="btn p-3 btn-primary fs-sm rounded-0 d-none d-lg-inline-flex"
+    >
+      &nbsp;Get Started
+    </a>-->
+    <a
+      href="tel:+2348072090622"
+      class="btn p-2 mx-4 btn-secondary rounded-0 d-none d-lg-inline-flex"
+    >
+      <i class="fa-solid fa-headset fa-3x"></i>&nbsp;&nbsp;+234 (702)-055-5652
+    </a>
+  </div>
+</header>

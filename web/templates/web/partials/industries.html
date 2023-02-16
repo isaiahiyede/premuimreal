@@ -1,0 +1,194 @@
+{% load static %}
+<!-- Industries -->
+<section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
+  <h2 class="h1 text-center pb-3 pb-lg-4">Industries We Serve</h2>
+
+  <!-- Nav tabs -->
+  <ul
+    class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4"
+    role="tablist"
+  >
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link text-nowrap"
+        id="telecommunication-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#telecommunication"
+        type="button"
+        role="tab"
+        aria-controls="telecommunication"
+        aria-selected="false"
+        tabindex="-1"
+      >
+        <i class="fa-solid fa-tower-cell fs-lg opacity-60 me-2"></i>
+        Telecommunication
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link text-nowrap active"
+        id="Banking-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#Banking"
+        type="button"
+        role="tab"
+        aria-controls="Banking"
+        aria-selected="true"
+      >
+        <i class="fa-solid fa-landmark fs-bse opacity-60 me-2"></i>
+        Financial Sector
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link text-nowrap"
+        id="real-estate-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#real-estate"
+        type="button"
+        role="tab"
+        aria-controls="real-estate"
+        aria-selected="false"
+        tabindex="-1"
+      >
+        <i class="fa-solid fa-city fs-lg opacity-60 me-2"></i>
+
+        Real Estate
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content bg-secondary rounded-3 py-4">
+    <!-- Telecommunication -->
+    <div
+      class="tab-pane fade"
+      id="telecommunication"
+      role="tabpanel"
+      aria-labelledby="telecommunication-tab"
+    >
+      <div
+        class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0"
+      >
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Telecommunication</h3>
+          <p style="text-align: justify">
+            Big data has become important to drive progress in the
+            telecommunication industry. With the right data analytics approach,
+            telecommunication companies can dramatically improve their services
+            and make their subscribers happier. Telecoms that implement big data
+            analytics can reap several benefits such as informed
+            decision-making, improved customer service, and efficient
+            operations. With us at CRC Data & Analytics, we can provide products
+            for you in the following areas:
+          </p>
+          <p>
+            <ul>
+              <li>Network Optimization</li>
+              <li>Performing Preventive Diagnostics</li>
+              <li>Target Marketing</li>
+              <li>Recommendation Engine</li>
+              <li>Price Optimization</li>
+              <li>Predictive Chun Analysis</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img
+            src="{% static 'web/img/telecoms.jpg' %}"
+            class="d-block rounded-3 my-lg-2 mx-auto me-md-0"
+            width="564"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Banking -->
+    <div
+      class="tab-pane fade active show"
+      id="Banking"
+      role="tabpanel"
+      aria-labelledby="Banking-tab"
+    >
+      <div
+        class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0"
+      >
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Financial Sector</h3>
+          <p style="text-align: justify">
+            Data analytics in the finance and banking sector is mainly used in
+            demand, supply, and risk management. Many banks are working on improving their data
+            analytics, mainly to give them an edge against competition or to
+            predict emerging trends that can affect their businesses. We at CRC
+            Data & Analytics have developed products that will make bankers use
+            their customers past data to get the future best our of their
+            customers. Our products in this area includes:
+          </p>
+          <p>
+            <ul>
+              <li><strong>Customer Returnex</strong> - which helps banks know the customers that are likely to come back to
+            them and take loans and those that will go to other banks to take
+            loans.</li>
+              <li><strong>Risk Calculator</strong> - which helps the bank know the riskiness of
+            their customers.</li>
+              <li>
+                <strong>Sentiment Analysis</strong> - which helps organizations
+            understand the emotions and feelings of their customers on social
+            media
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img
+            src="{% static 'web/img/finance.jpg' %}"
+            class="d-block rounded-3 my-lg-2 mx-auto me-md-0"
+            width="564"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Estate -->
+    <div
+      class="tab-pane fade"
+      id="real-estate"
+      role="tabpanel"
+      aria-labelledby="real-estate-tab"
+    >
+      <div
+        class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0"
+      >
+        <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+          <h3 class="mb-lg-4">Real Estate</h3>
+          <p style="text-align: justify">
+            Smart data analytics is giving real estate professionals and
+            investors in the real estate industry more insight into the factors
+            impacting property value than ever before. From assessing risks to
+            analyzing evolving trends, we're now able to anticipate the success
+            of a property more accurately thanks to the abundance of information
+            available to us through data. We at CRC Data & Analytics can build
+            products that will ensure that:
+          </p>
+          <p>
+            <ul>
+              <li>Predictive analytics help portals understand their customer's journey</li>
+              <li>Predictive analytics help investors with finding the right property</li>
+              <li>Predictive analytics make smarter valuation models</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+          <img
+            src="{% static 'web/img/realestate.jpg' %}"
+            class="d-block rounded-3 my-lg-2 mx-auto me-md-0"
+            width="564"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

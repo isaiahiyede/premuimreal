@@ -1,0 +1,192 @@
+{% load static %}
+<!-- Testimonials slider: Style 3. Ideally it should be placed outside of any container to make it full width. -->
+
+<div class="px-2 px-sm-0 bg-secondary py-5">
+  <h2 class="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center text-primary">
+    Testimonials
+  </h2>
+  <div
+    class="swiper"
+    data-swiper-options='{
+    "slidesPerView": 1,
+    "centeredSlides": true,
+    "spaceBetween": 8,
+    "loop": true,
+    "pagination": {
+      "el": ".swiper-pagination",
+      "clickable": true
+    },
+    "breakpoints": {
+      "500": {
+        "slidesPerView": 2,
+        "spaceBetween": 24
+      },
+      "1000": {
+        "slidesPerView": 4,
+        "spaceBetween": 24
+      },
+      "1500": {
+        "slidesPerView": 6,
+        "spaceBetween": 24
+      }
+    }
+  }'
+  >
+    <div class="swiper-wrapper">
+      <!-- Item -->
+      <div class="swiper-slide h-auto pt-4">
+        <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+          <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+            <span
+              class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
+            >
+              <i class="bx bxs-quote-left"></i>
+            </span>
+            <blockquote class="card-body pb-3 mb-0">
+              <p class="mb-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis nesciunt voluptatem facere optio.
+              </p>
+            </blockquote>
+            <div class="card-footer border-0 text-nowrap pt-0">
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+            </div>
+          </div>
+          <figcaption class="d-flex align-items-center ps-4 pt-4">
+            <img
+              src="{% static 'web/img/avatar/03.jpg' %}"
+              width="48"
+              class="rounded-circle"
+              alt="Fannie Summers"
+            />
+            <div class="ps-3">
+              <h6 class="fs-sm fw-semibold mb-0">Yekini Iskilu</h6>
+              <span class="fs-xs text-muted">Data Engineer</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pt-4">
+        <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+          <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+            <span
+              class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
+            >
+              <i class="bx bxs-quote-left"></i>
+            </span>
+            <blockquote class="card-body pb-3 mb-0">
+              <p class="mb-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis nesciunt voluptatem facere optio.
+              </p>
+            </blockquote>
+            <div class="card-footer border-0 text-nowrap pt-0">
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+            </div>
+          </div>
+          <figcaption class="d-flex align-items-center ps-4 pt-4">
+            <img
+              src="{% static 'web/img/avatar/02.jpg' %}"
+              width="48"
+              class="rounded-circle"
+              alt="Robert Fox"
+            />
+            <div class="ps-3">
+              <h6 class="fs-sm fw-semibold mb-0">Robert Fox</h6>
+              <span class="fs-xs text-muted">QA Engineer</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pt-4">
+        <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+          <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+            <span
+              class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
+            >
+              <i class="bx bxs-quote-left"></i>
+            </span>
+            <blockquote class="card-body pb-3 mb-0">
+              <p class="mb-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis nesciunt voluptatem facere optio.
+              </p>
+            </blockquote>
+            <div class="card-footer border-0 text-nowrap pt-0">
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+            </div>
+          </div>
+          <figcaption class="d-flex align-items-center ps-4 pt-4">
+            <img
+              src="{% static 'web/img/avatar/04.jpg' %}"
+              width="48"
+              class="rounded-circle"
+              alt="Annette Black"
+            />
+            <div class="ps-3">
+              <h6 class="fs-sm fw-semibold mb-0">Annette Black</h6>
+              <span class="fs-xs text-muted">Project Manager</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pt-4">
+        <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+          <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+            <span
+              class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
+            >
+              <i class="bx bxs-quote-left"></i>
+            </span>
+            <blockquote class="card-body pb-3 mb-0">
+              <p class="mb-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis nesciunt voluptatem facere optio.
+              </p>
+            </blockquote>
+            <div class="card-footer border-0 text-nowrap pt-0">
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+            </div>
+          </div>
+          <figcaption class="d-flex align-items-center ps-4 pt-4">
+            <img
+              src="{% static 'web/img/avatar/05.jpg' %}"
+              width="48"
+              class="rounded-circle"
+              alt="Jerome Bell"
+            />
+            <div class="ps-3">
+              <h6 class="fs-sm fw-semibold mb-0">Jerome Bell</h6>
+              <span class="fs-xs text-muted">Developer</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Pagination (bullets) -->
+    <div class="swiper-pagination position-relative pt-1 pt-sm-3 mt-5"></div>
+  </div>
+</div>

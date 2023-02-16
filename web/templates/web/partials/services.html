@@ -1,0 +1,227 @@
+{% load static %}
+<!-- Services -->
+<section class="container py-5 mt-md-3 my-lg-5">
+  <h2 class="h1 pt-xl-2 pb-4 mb-2 mb-lg-3 text-center">Our Services</h2>
+  <div
+    class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden"
+    data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 24,
+          "autoHeight": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "991": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+    <div style="height: 400px;"
+      class="swiper-wrapper"
+      id="swiper-wrapper-dbe6a46f60db8141"
+      aria-live="polite"
+      style="height: 457px; transform: translate3d(0px, 0px, 0px)">
+      <!-- Item -->
+      <div
+        class="swiper-slide swiper-slide-next"
+        role="group"
+        aria-label="1 / 3"
+        style="width: 416px; margin-right: 24px">
+        <a href="{% url 'web.services.study_abroad' %}"
+          ><img
+            src="{% static 'web/img/travel_services.jpeg' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Study Abroad</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              We also carry out study and travel abroad services.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div style="height: 400px;"
+        class="swiper-slide"
+        role="group"
+        aria-label="2 / 3"
+        style="width: 416px; margin-right: 24px">
+        <a href="{% url 'web.services.funds_transfer' %}"
+          ><img
+            src="{% static 'web/img/funds_transfer.jpg' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Funds Transfer</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              Premuimreal is a multi-currency app to send and receive money from anywhere in the world for FREE!.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div style="height: 400px;"
+        class="swiper-slide swiper-slide-active"
+        role="group"
+        aria-label="3 / 3"
+        style="width: 416px; margin-right: 24px">
+        <a href="{% url 'web.services.education' %}"
+          ><img
+            src="{% static 'web/img/prc_scool.jpg' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Educational Services</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              Our educational services include training on modern technologies, 
+              business strategies, competitive marketing to help you gain a competitive edge.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination (bullets) -->
+    <div 
+      class="swiper-pagination position-relative d-lg-none mt-5 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
+      <span
+        class="swiper-pagination-bullet swiper-pagination-bullet-active"
+        tabindex="0"
+        role="button"
+        aria-label="Go to slide 1"
+        aria-current="true"
+      ></span>
+    </div>
+
+    <span
+      class="swiper-notification"
+      aria-live="assertive"
+      aria-atomic="true">  
+    </span>
+  </div>
+  <div
+    class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden"
+    data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 24,
+          "autoHeight": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "991": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+    <div
+      class="swiper-wrapper"
+      id="swiper-wrapper-dbe6a46f60db8141"
+      aria-live="polite"
+      style="height: 457px; transform: translate3d(0px, 0px, 0px)">
+      <!-- Item -->
+      <div style="height: 400px;"
+        class="swiper-slide swiper-slide-next"
+        role="group"
+        aria-label="1 / 3"
+        style="width: 416px;  margin-right: 24px">
+        <a href="{% url 'web.services.loans' %}"
+          ><img
+            src="{% static 'web/img/pcredit2.jpg' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Micro and Nano Loans</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              We provide micro and nano loans for your daily needs. 
+              With deep experience across the financial sector, we work side-by-side 
+              with you and are fully invested in your success
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div style="height: 400px;"
+        class="swiper-slide"
+        role="group"
+        aria-label="2 / 3"
+        style="width: 416px;  margin-right: 24px">
+        <a href="{% url 'web.services.imp_exp' %}"
+          ><img
+            src="{% static 'web/img/imp_exp.jpg' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Import and Export</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              Premiumreal consulting team have a vast range of experience importing 
+              and exporting of goods and services all over the world. We ensure that your items get to you on time.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div style="height: 400px;"
+        class="swiper-slide swiper-slide-active"
+        role="group"
+        aria-label="3 / 3"
+        style="width: 416px;  margin-right: 24px">
+        <a href="{% url 'web.services.consulting' %}"
+          ><img
+            src="{% static 'web/img/12.png' %}"
+            class="rounded-3 bg-secondary"
+            alt="Image"
+        /></a>
+        <div class="pt-4">
+          <h3 class="h4 text-center">Consulting</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center fs-sm mb-2">
+              For both individuals and businesses, we offer business and career consulting.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination (bullets) -->
+    <div
+      class="swiper-pagination position-relative d-lg-none mt-5 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
+      <span
+        class="swiper-pagination-bullet swiper-pagination-bullet-active"
+        tabindex="0"
+        role="button"
+        aria-label="Go to slide 1"
+        aria-current="true"
+      ></span>
+    </div>
+
+    <span
+      class="swiper-notification"
+      aria-live="assertive"
+      aria-atomic="true">  
+    </span>
+  </div>
+</section>

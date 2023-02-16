@@ -1,0 +1,80 @@
+{% extends "web/layout.html" %} {% load static %}
+<div></div>
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Business Analysis
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/17.jpeg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Business Analysis
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Business Analysis</h1>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Welcome to Premium Real Consulting's Business Analysis Training program!
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+  			Business analysis is the practice of identifying and defining business needs and requirements, and finding solutions to business problems. Business analysts work with organizations to improve processes, increase efficiency, and achieve specific goals.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+ 			Are you looking to build your skills as a business analyst and take your career to the next level? Our comprehensive training program is designed to give you the knowledge and tools you need to succeed in today's competitive business environment.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+			Our experienced trainers have a wealth of knowledge and practical experience in the field of business analysis, and they will guide you through every step of the process. From identifying and analyzing business needs to developing and implementing solutions, you will learn the key concepts and techniques that are essential for success.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+			In addition to classroom instruction, our training program includes hands-on exercises and real-world case studies to give you the opportunity to apply what you've learned in a practical setting. You will also have access to our extensive resource library, which includes a variety of materials to help you continue learning and growing in your career.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+			Upon completion of our Business Analysis Training program, you will be well-equipped to tackle any business challenge and add value to your organization. Contact us today to learn more and sign up for our next training session. We look forward to helping you succeed!
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

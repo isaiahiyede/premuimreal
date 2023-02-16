@@ -1,0 +1,77 @@
+{% extends "web/layout.html" %} {% load static %}
+<div></div>
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Consulting
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/17.jpeg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Consulting
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Consulting</h1>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Welcome to Premium Real Consulting!
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Are you looking for expert guidance to help your business reach its full potential? Look no further. At Premium Real Consulting, we are dedicated to providing top-notch consulting services to help individuals and companies of all sizes achieve their goals.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            With a team of highly skilled and experienced consultants, we offer a range of services to meet your specific needs. From strategy development and market research to organizational design and change management, we have the expertise to help your business succeed.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            Our approach is tailored to your unique situation and goals, and we work closely with you to develop customized solutions that drive results. We pride ourselves on our ability to listen to your needs, understand your challenges, and provide valuable insights and recommendations that lead to success.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5" style="text-align: justify">
+            So if you're ready to take your business to the next level or grow your personal skills, contact us today to schedule a consultation. We look forward to the opportunity to work with you!
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
