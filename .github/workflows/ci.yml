@@ -47,4 +47,7 @@ jobs:
           username: ${{ secrets.PRC_HOST_USERNAME }}
           key: ${{ secrets.PRC_HOST_KEY }}
           script: |
-            /root/cdal-main/deploy_code_changes.py
+            cd ${{ secrets.PROJECT_PATH }}
+            sudo git checkout main
+            sudo git pull origin main
+            sudo systemctl restart supervisor
