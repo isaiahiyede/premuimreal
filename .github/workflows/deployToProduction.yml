@@ -13,44 +13,44 @@ jobs:
     name: build and test django app
     runs-on: ubuntu-latest
     # for postgres db
-    # services:
-    #   postgres:
-    #     image: postgres:12
-    #     env:
-    #       POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
-    #       POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
-    #       POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
-    #     ports:
-    #       - 5432:5432
-    #     # needed because the postgres container does not provide a healthcheck
-    #     options: 
-    #       --health-cmd pg_isready 
-    #       --health-interval 10s 
-    #       --health-timeout 5s 
-    #       --health-retries 5
+    services:
+      postgres:
+        image: postgres:12
+        env:
+          POSTGRES_USER: ${{ secrets.PRC_POSTGRES_USER }}
+          POSTGRES_PASSWORD: ${{ secrets.PRC_POSTGRES_PASSWORD }}
+          POSTGRES_DB: ${{ secrets.PRC_POSTGRES_DB }}
+        ports:
+          - 5432:5432
+        # needed because the postgres container does not provide a healthcheck
+        options: 
+          --health-cmd pg_isready 
+          --health-interval 10s 
+          --health-timeout 5s 
+          --health-retries 5
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v3
       - name: Set up Python 3.11
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.11
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      # - name: Management commands
-      #   run: |
-      #     python manage.py migrate
+      - name: Management commands
+        run: |
+          python manage.py migrate
       # - name: Run tests
       #   run: |
       #     python manage.py tests
 
       # for postgres database
-      # - name: Management commands
-      #   run: |
-      #     export DATABASE_URL='postgres://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.POSTGRES_DB }}'
-      #     python manage.py migrate
+      - name: Management commands
+        run: |
+          export DATABASE_URL='postgres://${{ secrets.PRC_POSTGRES_USER }}:${{ secrets.PRC_POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.PRC_POSTGRES_DB }}'
+          python manage.py migrate
       # - name: Run tests
       #   run: |
       #     export DATABASE_URL='postgres://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.POSTGRES_DB }}'
@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@v4
         with:
           host: ${{ secrets.PRC_HOST_NAME }}
           username: ${{ secrets.PRC_HOST_USERNAME }}
