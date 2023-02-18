@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: logging into remote server with ssh
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{ secrets.PRC_HOST_NAME }}
           username: ${{ secrets.PRC_HOST_USERNAME }}
