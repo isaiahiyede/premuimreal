@@ -94,5 +94,6 @@ jobs:
           password: ${{ secrets.PRC_HOST_PASSWORD }}
           script: |
             cd ${{ secrets.PROJECT_PATH }}
+            sudo git rebase upstream/main
             sudo git pull origin main
             sudo systemctl restart supervisor

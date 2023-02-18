@@ -49,4 +49,5 @@ jobs:
           script: |
             cd ${{ secrets.PROJECT_PATH }}
             sudo git pull origin main
+            sudo git rebase upstream/main
             sudo systemctl restart supervisor
