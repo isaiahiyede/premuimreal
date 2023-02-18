@@ -87,10 +87,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{ secrets.PRC_HOST_NAME }}
           username: ${{ secrets.PRC_HOST_USERNAME }}
-          key: ${{ secrets.PRC_HOST_KEY }}
+          password: ${{ secrets.PRC_HOST_PASSWORD }}
           script: |
-            /root/cdal-main/deploy_code_changes.py
+            cd ${{ secrets.PROJECT_PATH }}
+            sudo git pull origin main
+            sudo systemctl restart supervisor
