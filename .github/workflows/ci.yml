@@ -45,7 +45,7 @@ jobs:
         with:
           host: ${{ secrets.PRC_HOST_NAME }}
           username: ${{ secrets.PRC_HOST_USERNAME }}
-          key: ${{ secrets.PRC_CI_CD }}
+          key: ${{ secrets.PRC_HOST_KEY }}
           port: ${{ secrets.PRC_HOST_PORT }}
           script: |
             /root/cdal-main/deploy_code_changes.py
