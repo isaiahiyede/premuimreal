@@ -42,19 +42,19 @@ jobs:
       - name: Management commands
         run: |
           python manage.py migrate
-      # - name: Run tests
-      #   run: |
-      #     python manage.py tests
+      - name: Run tests
+        run: |
+          python manage.py test
 
       # for postgres database
       - name: Management commands
         run: |
           export DATABASE_URL='postgres://${{ secrets.PRC_POSTGRES_USER }}:${{ secrets.PRC_POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.PRC_POSTGRES_DB }}'
           python manage.py migrate
-      # - name: Run tests
-      #   run: |
-      #     export DATABASE_URL='postgres://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.POSTGRES_DB }}'
-      #     python manage.py test
+      - name: Run tests
+        run: |
+          export DATABASE_URL='postgres://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@localhost:5432/${{ secrets.POSTGRES_DB }}'
+          python manage.py test
 
   docker-build:
     needs: build-test
